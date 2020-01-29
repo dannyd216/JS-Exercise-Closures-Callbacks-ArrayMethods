@@ -205,8 +205,8 @@ function getFullNames(item) {
 
   let runList = [];
 
-  item.forEach(function (item) {
-    runList.push(item.last_name, item.first_name);
+  item.forEach(function (arr) {
+    runList.push(arr.last_name, arr.first_name);
   });
 
   return runList;
@@ -249,8 +249,16 @@ function firstNamesAllCaps(arr) {
  * @returns an array containing only the runners that use the given `tShirtSize`.
  * The runners in the array appear in the same order they appear in the `runners` array.
  */
-function getRunnersByTShirtSize( /* CODE HERE */ ) {
+function getRunnersByTShirtSize(arr, shirt) {
   /* CODE HERE */
+
+  const shirtSize = arr.filter(function (shirt) {
+    return arr.shirt_size;
+  });
+
+  return shirtSize;
+
+
 }
 
 /**
