@@ -200,12 +200,12 @@ function processDuplicateFree( /* CODE HERE ONLY AFTER COMPLETING ALL OTHER TASK
  * @returns an array with all the runners' full names in the following format: "Smith, John".
  * The full names appear in the array in the same order the runners appear in the `runners` array.
  */
-function getFullNames(arr) {
+function getFullNames(item) {
   /* CODE HERE */
 
   let runList = [];
 
-  arr.forEach(function (item) {
+  item.forEach(function (item) {
     runList.push(item.last_name, item.first_name);
   });
 
@@ -225,8 +225,15 @@ function getFullNames(arr) {
  * @returns an array with all the runners' first names in ALL CAPS.
  * The first names appear in the array in the same order the runners appear in the `runners` array.
  */
-function firstNamesAllCaps( /* CODE HERE */ ) {
+function firstNamesAllCaps(arr) {
   /* CODE HERE */
+
+  const allCaps = arr.map(function (item) {
+    return item.first_name.toUpperCase();
+  });
+
+  return allCaps;
+
 }
 
 /**
