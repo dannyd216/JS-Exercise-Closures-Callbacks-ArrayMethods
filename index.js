@@ -93,8 +93,16 @@ function processLastItem(arr, cb) {
  * [2] Invoking `processSum` passing `[]` and `(num) => num + 1000`,
  * should return 1000.
  */
-function processSum( /* CODE HERE */ ) {
+function processSum(arr, cb) {
   /* CODE HERE */
+
+  const total = arr.reduce(function (accum, item) {
+
+    return accum + item;
+
+  }, 0)
+
+  return cb(total);
 }
 
 /**
@@ -139,8 +147,10 @@ function processProduct( /* CODE HERE */ ) {
  * "lady gaga" and `['foo', 'bar']` and `(bool) => bool ? 'nice!' : 'sad'`,
  * should return "sad".
  */
-function processContains( /* CODE HERE */ ) {
+function processContains(item1, list1, cb) {
   /* CODE HERE */
+
+  return cb(list1.includes(item1));
 }
 
 /**
