@@ -253,13 +253,17 @@ function firstNamesAllCaps(arr) {
  */
 function getRunnersByTShirtSize(arr, shirt) {
   /* CODE HERE */
-   
-  arr.filter(function(shirt) {
-    
-    return shirt.shirtSize === shirt;
-  });
 
-  return arr;
+   
+  const shirtSize = [];
+  
+  arr.filter(function(shirt) {
+
+    return shirt.shirtSize === shirt;
+  }
+  );
+
+  return shirtSize;
 }
 /*
  * ### Challenge `tallyUpDonations`
