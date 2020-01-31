@@ -205,8 +205,11 @@ function getFullNames(item) {
 
   let runList = [];
 
-  item.forEach(function (arr) {
-    runList.push(arr.last_name, arr.first_name);
+  item.forEach(function (item) {
+
+    return runList.push(`${item.last_name}, ${item.first_name}`);
+
+
   });
 
   return runList;
@@ -251,12 +254,19 @@ function firstNamesAllCaps(arr) {
  */
 function getRunnersByTShirtSize(arr, shirt) {
   /* CODE HERE */
+  
+  // const shirtSize = arr.filter(function (shirt) {
 
-  const shirtSize = arr.filter(function (shirt) {
-    return arr.shirt_size;
+  //   return shirt.shirt_size === shirt;
+  // });
+
+   
+  arr.filter(function(shirt) {
+    
+    return shirt.shirtSize === shirt;
   });
 
-  return shirtSize;
+  return arr;
 }
 
 /**
@@ -298,10 +308,13 @@ function tallyUpDonations(arr) {
  */
 function counterMaker() {
   // BROKEN CODE STARTS
-  let count = 0;
+  let count = -1;
 
-  function {
-    ++count;
+  return function() {
+    
+    //count += count + 1;
+
+    return ++count;
   }
 };
 
