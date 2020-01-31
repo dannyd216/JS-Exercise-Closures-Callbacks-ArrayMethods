@@ -205,16 +205,10 @@ function getFullNames(item) {
 
   let runList = [];
 
-<<<<<<< HEAD
   item.forEach(function (item) {
 
     return runList.push(`${item.last_name}, ${item.first_name}`);
 
-
-// =======
-//  item.forEach(function (arr) {
-//     runList.push(arr.last_name, arr.first_name);
->>>>>>> 8468241d6aebfcc217df7fd79fea71a08a712c87
   });
 
   return runList;
@@ -259,13 +253,6 @@ function firstNamesAllCaps(arr) {
  */
 function getRunnersByTShirtSize(arr, shirt) {
   /* CODE HERE */
-<<<<<<< HEAD
-  
-  // const shirtSize = arr.filter(function (shirt) {
-
-  //   return shirt.shirt_size === shirt;
-  // });
-
    
   arr.filter(function(shirt) {
     
@@ -273,17 +260,8 @@ function getRunnersByTShirtSize(arr, shirt) {
   });
 
   return arr;
-=======
-
-//   const shirtSize = arr.filter(function (shirt) {
-//     return arr.shirt_size;
-//   });
-
-//   return shirtSize;
-// >>>>>>> 8468241d6aebfcc217df7fd79fea71a08a712c87
-// }
-
-/**
+}
+/*
  * ### Challenge `tallyUpDonations`
  * 
  * @instructions
@@ -302,6 +280,7 @@ function tallyUpDonations(arr) {
     return accumulator + item.donation;
   }, 0);
 
+  return total;
 }
 
 /////////////// CLOSURES ///////////////
@@ -322,26 +301,16 @@ function tallyUpDonations(arr) {
  */
 function counterMaker() {
   // BROKEN CODE STARTS
-<<<<<<< HEAD
+
   let count = -1;
 
   return function() {
     
     //count += count + 1;
-=======
-  let count = 0;
-
-  return function () {
->>>>>>> 8468241d6aebfcc217df7fd79fea71a08a712c87
 
     return ++count;
-  }
-};
-
-<<<<<<< HEAD
-=======
-const newCounter = counter();
->>>>>>> 8468241d6aebfcc217df7fd79fea71a08a712c87
+  };
+}
 
 
 
@@ -365,7 +334,7 @@ const newCounter = counter();
  * counter() // should return 0
  * etc
  */
-<<<<<<< HEAD
+
 function counterMakerWithLimit(max) {
   let count = -1;
   return function counter() {
@@ -376,10 +345,6 @@ function counterMakerWithLimit(max) {
     }
     return count;
   };
-=======
-function counterMakerWithLimit() {
-  /* CODE HERE */
->>>>>>> 8468241d6aebfcc217df7fd79fea71a08a712c87
 }
 
 /////////////// END OF CHALLENGE ///////////////
